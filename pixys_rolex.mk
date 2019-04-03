@@ -17,12 +17,12 @@
 $(call inherit-product, device/xiaomi/rolex/full_rolex.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/pixyse/config/common_full_phone.mk)
 
 #Boot Animation res
 TARGET_BOOT_ANIMATION_RES := 720
 
-PRODUCT_NAME := lineage_rolex
+PRODUCT_NAME := pixys_rolex
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
@@ -33,3 +33,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable
 BUILD_FINGERPRINT := "Xiaomi/rolex/rolex:7.1.2/N2G47H/V9.2.6.0.NCCMIEK:user/release-keys"
 
+PIXYS_BUILD_TYPE := OFFICIAL
